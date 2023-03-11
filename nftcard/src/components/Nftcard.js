@@ -28,7 +28,7 @@ export class Nftcard extends Component {
                     </div>
                     <hr/>
                     <div className='creator'>
-                        <img className='avatar' src={Avatar}/>
+                        <img className='avatar' alt='avatarpicture' src={Avatar}/>
                         <p>Creation of <span className='name'>Abel Morad</span></p>
                     </div>
                 </div>
