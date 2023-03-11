@@ -8,7 +8,7 @@ import equilibrium from '../images/image-equilibrium.jpg'
 export class Nftcard extends Component {
   render() {
     return (
-      <div class="card-container">
+      <main class="card-container">
            <section className="nft-card">
                 <div className='card-content'>
                     <div className='image'>
@@ -33,7 +33,7 @@ export class Nftcard extends Component {
                     </div>
                 </div>
            </section>
-      </div>
+      </main>
     )
   }
 }
