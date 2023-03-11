@@ -8,11 +8,130 @@
   --neutral-coolor-white: hsl(0, 0%, 100%);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-size: 1.1rem;
+  display: grid;
+  place-content: center;
+
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--neutral-color-darkblue-bg);
+  color: var(--neutral-coolor-white);
+}
+
+.card-container {
+  display: flex;
+  -webkit-box-pack: center;
+  place-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+}
+.nft-card {
+  display: grid;
+  place-content: center;
+  background-color: var(--neutral-color-darkblue-cardbg);
+  height: 550px;
+  width: 320px;
+  border-radius: 16px;
+}
+.card-content {
+  display: grid;
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+  width: 270px;
+}
+.eq-img {
+  height: 270px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+.image {
+  position:relative;
+  height: 270px;
+  width: auto;
+}
+
+.image:after {
+  content:'\A';
+  position:absolute;
+  width:100%; 
+  height:100%;
+  top:0; 
+  left:0;
+  background: hsl(178, 100%, 50%, 0.4);
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  opacity:0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  cursor: pointer;
+}
+.image:hover:after {
+  opacity:1;
+}
+.eth-number {
+  width: fit-content;
+}
+.eth-number:hover {
+  color: var(--primary-color-cyan);
+}
+.card-content p {
+  color: var(--primary-color-soft-blue);
+  font-weight: 100;
+}
+.eth-and-days {
+  display: flex;
+  justify-content: space-between;
+}
+.eth {
+  display: flex;
+  gap: 0.5rem;
+}
+.eth-icon,.clock-icon {
+  place-self: center;
+  height: 18px;
+}
+.eth p {
+  color: var(--primary-color-cyan);
+  font-weight: 600;
+}
+.days-left {
+  display: flex;
+  gap: 0.5rem;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--primary-color-soft-blue);
+}
+.creator {
+  display: flex;
+  align-items: center;
+}
+.creator p,span {
+  font-weight: 500;
+}
+.avatar {
+  border: 1px solid var(--neutral-coolor-white);
+  border-radius: 2rem;
+  height: 40px;
+  margin-right: 1rem;
+}
+.name {
+  color: var(--neutral-coolor-white);
+}
+.name:hover {
+  color: var(--primary-color-cyan);
 }
