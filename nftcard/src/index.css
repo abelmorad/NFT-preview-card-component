@@ -124,7 +124,7 @@ hr {
   font-weight: 500;
 }
 .avatar {
-  border: 1px solid var(--neutral-coolor-white);
+  border: 2px solid var(--neutral-coolor-white);
   border-radius: 2rem;
   height: 40px;
   margin-right: 1rem;

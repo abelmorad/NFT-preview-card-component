@@ -14,7 +14,7 @@ export class Nftcard extends Component {
                     <div className='image'>
                         <img className='eq-img' src={equilibrium}alt='equilibrium image'/>
                     </div>
-                    <h2 className='eth-number'>Equilibrium #2597</h2>
+                    <h1 className='eth-number'>Equilibrium #2597</h1>
                     <p>Out Equilibrium collection promotes balance and calm.</p>
                     <div className='eth-and-days'>
                         <div className='eth'>
