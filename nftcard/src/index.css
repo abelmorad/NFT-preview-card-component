@@ -1,0 +1,18 @@
+:root {
+  --primary-color-soft-blue: hsl(215, 51%, 70%);
+  --primary-color-cyan: hsl(178, 100%, 50%);
+
+  --neutral-color-darkblue-bg: hsl(217, 54%, 11%);
+  --neutral-color-darkblue-cardbg: hsl(216, 50%, 16%);
+  --neutal-color-darkblue-line: hsl(215, 32%, 27%);
+  --neutral-coolor-white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.1rem;
+}
